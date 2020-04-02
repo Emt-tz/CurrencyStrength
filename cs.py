@@ -49,44 +49,33 @@ class Curr:
 
 		mine = lv
 
-		mm = {
-		"":'<div id="map-innercontainer-weak3" style="background-image:none"> </div>',
-			"strong3":'<div id="map-innercontainer-strong3"> </div>',
-			"strong2":'<div id="map-innercontainer-strong2"> </div>',
-			"strong1":'<div id="map-innercontainer-strong1"> </div>',
-			"weak1":'<div id="map-innercontainer-weak1"> </div>',
-			"weak2":'<div id="map-innercontainer-weak2"> </div>',
-			"weak3":'<div id="map-innercontainer-weak3"> </div>',
-		}
-
-
 		# #Show out the results to the user
 		replacements = (u"div", u""),(u'id="map-innercontainer-',u""),(u"<",""),(u'style="background-image:none"',u""),(u'">',""),(u"/",u""),(u"",u""),(u">",u""),(u'"',u"")
 		
-		#print(f'Currency\t\tStrength\n')
-		# print(f'{pairs[0].text}\t\t\t{Curr.multiple_replace(str(mine[0:6]), *replacements)}\n')
-		# print(f'{pairs[1].text}\t\t\t\t{Curr.multiple_replace(str(mine[6:12]), *replacements)}\n')
-		# print(f'{pairs[2].text}\t\t\t\t{Curr.multiple_replace(str(mine[12:18]), *replacements)}\n')
-		# print(f'{pairs[3].text}\t\t\t\t{Curr.multiple_replace(str(mine[18:24]), *replacements)}\n')
-		# print(f'{pairs[4].text}\t\t\t\t{Curr.multiple_replace(str(mine[24:30]), *replacements)}\n')
-		# print(f'{pairs[5].text}\t\t\t\t{Curr.multiple_replace(str(mine[30:36]), *replacements)}\n')
+		print(f'Currency\t\tStrength\n')
+		print(f'{pairs[0].text}\t\t\t{Curr.multiple_replace(str(mine[0:6]), *replacements)}\n')
+		print(f'{pairs[1].text}\t\t\t\t{Curr.multiple_replace(str(mine[6:12]), *replacements)}\n')
+		print(f'{pairs[2].text}\t\t\t\t{Curr.multiple_replace(str(mine[12:18]), *replacements)}\n')
+		print(f'{pairs[3].text}\t\t\t\t{Curr.multiple_replace(str(mine[18:24]), *replacements)}\n')
+		print(f'{pairs[4].text}\t\t\t\t{Curr.multiple_replace(str(mine[24:30]), *replacements)}\n')
+		print(f'{pairs[5].text}\t\t\t\t{Curr.multiple_replace(str(mine[30:36]), *replacements)}\n')
 		
-		#EURO
-		s.call(['notify-send','Currency\t\tStrength',f'{pairs[0].text}\t\t{Curr.multiple_replace(str(mine[0:6]), *replacements)}'])
-		# GBP
-		s.call(['notify-send','Currency\t\t\tStrength',f'{pairs[1].text}\t\t{Curr.multiple_replace(str(mine[6:12]), *replacements)}'])
-		#USD
-		s.call(['notify-send','Currency\t\t\tStrength',f'{pairs[2].text}\t\t{Curr.multiple_replace(str(mine[12:18]), *replacements)}'])
-		#AUD
-		s.call(['notify-send','Currency\t\t\tStrength',f'{pairs[3].text}\t\t{Curr.multiple_replace(str(mine[18:24]), *replacements)}'])
-		#JPY
-		s.call(['notify-send','Currency\t\t\tStrength',f'{pairs[4].text}\t\t{Curr.multiple_replace(str(mine[24:30]), *replacements)}'])
-		#CHF
-		s.call(['notify-send','Currency\t\t\tStrength',f'{pairs[5].text}\t\t{Curr.multiple_replace(str(mine[30:36]), *replacements)}'])
-		#NZD
-		s.call(['notify-send','Currency\t\t\tStrength',f'{pairs[6].text}\t\t{Curr.multiple_replace(str(mine[36:42]), *replacements)}'])
-		#CAD
-		s.call(['notify-send','Currency\t\t\tStrength',f'{pairs[7].text}\t\t{Curr.multiple_replace(str(mine[42:48]), *replacements)}'])
+# 		#EURO
+# 		s.call(['notify-send','Currency\t\tStrength',f'{pairs[0].text}\t\t{Curr.multiple_replace(str(mine[0:6]), *replacements)}'])
+# 		# GBP
+# 		s.call(['notify-send','Currency\t\t\tStrength',f'{pairs[1].text}\t\t{Curr.multiple_replace(str(mine[6:12]), *replacements)}'])
+# 		#USD
+# 		s.call(['notify-send','Currency\t\t\tStrength',f'{pairs[2].text}\t\t{Curr.multiple_replace(str(mine[12:18]), *replacements)}'])
+# 		#AUD
+# 		s.call(['notify-send','Currency\t\t\tStrength',f'{pairs[3].text}\t\t{Curr.multiple_replace(str(mine[18:24]), *replacements)}'])
+# 		#JPY
+# 		s.call(['notify-send','Currency\t\t\tStrength',f'{pairs[4].text}\t\t{Curr.multiple_replace(str(mine[24:30]), *replacements)}'])
+# 		#CHF
+# 		s.call(['notify-send','Currency\t\t\tStrength',f'{pairs[5].text}\t\t{Curr.multiple_replace(str(mine[30:36]), *replacements)}'])
+# 		#NZD
+# 		s.call(['notify-send','Currency\t\t\tStrength',f'{pairs[6].text}\t\t{Curr.multiple_replace(str(mine[36:42]), *replacements)}'])
+# 		#CAD
+# 		s.call(['notify-send','Currency\t\t\tStrength',f'{pairs[7].text}\t\t{Curr.multiple_replace(str(mine[42:48]), *replacements)}'])
 
 
 if __name__ == '__main__':
